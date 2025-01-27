@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Layout */
+body {
+    font-size: sans-serif;
+    font-size: 1em;
+}
+img{
+    max-width: 100% ; /*transforma todas imagens em responsivas*/
+}
+
+.container:{
+    margin :50px 10 px;
+    text-align: center;
+}
+#sw1{
+    float:left;
+
+}
+#sw2{
+    float:right;
+}
+/**************Smartphones************/
+
+
+/* Cabeçalho */
+header h1{
+    color: #cc470d;
+    text-align:center;
+    padding: 25px 0px;
+}
+/*menu*/
+nav{
+    width:100%;
+}
+nav ul {
+    list-style:none;
+    background-color: #e15a1f;
+    overflow: hidden; /*essa linha sobrepoe*/
+}
+nav ul li{
+    float:left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display:block;
+    padding: 10px 15px;
+}
+nav ul li a:hover {
+    background-color: black;
+}
+
+/***rodapé***/
+footer{
+    width: 100%;
+    background-color: #e15a1f;
+    color:#ffffff;
+    padding: 15px;
+    font-size: 0.9em;
+    text-align: center ;
+
+}
+/********** Tablets, Notbooks / Pcs******/
+@media (min-widht:576px) /*so vai aplicar para telas maiors que o celular*/
+ {
+    #sw1,#sw2{
+        float: none;
+    }
+
+}
